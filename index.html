@@ -43,7 +43,7 @@
       ga("create", "UA-170294967-1", "auto");
       ga("send", "pageview");
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/EaselPlugin.min.js"></script>
     <script
@@ -402,10 +402,6 @@
         display: block !important;
       }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/build/three.min.js"></script>
-    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
-    <script src="https://threejs.org/examples/js/libs/fflate.min.js"></script>
-    <script src="https://rawcdn.githack.com/mrdoob/three.js/350f0a021943d6fa1d039a7c14c303653daa463f/examples/js/loaders/FBXLoader.js"></script>
     <style>
       .l-head {
         -webkit-text-stroke: 0.8px #e5e3dc;
@@ -992,7 +988,11 @@
           </svg>
         </div>
       </div>
-      <div style="filter: invert(0%)" class="webglholder"></div>
+      <spline-viewer
+        url="https://prod.spline.design/ZQ28bGqAzitafugA/scene.splinecode"
+        class="webglholder"
+        style="pointer-events: auto;"
+      ></spline-viewer>
     </div>
     <div class="cookie-c">
       <div class="cookie-t">
@@ -1625,7 +1625,5 @@
         });
       }
     </script>
-    <script src="./javascript/webglball/index.js"></script>
-    <script src="./javascript/webglball/shaders.js"></script>
   </body>
 </html>
