@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Workspace
 
 ## Overview
@@ -35,3 +36,30 @@ See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and pa
 - Pages: home (index.html), studio (work.html), L.E.D (about.html), contact, credits
 - Served via Vite dev server as a multi-page static site at preview path `/`
 - Source files extracted from `attached_assets/RLGOODS-main_*.zip`
+=======
+# WebGL Portfolio Clone
+
+A animated WebGL portfolio website built with HTML, CSS, and JavaScript (Three.js, Locomotive.js, GSAP).
+
+## Project Structure
+
+- `index.html` — Main homepage
+- `pages/` — Additional pages (about, contact, credits, work)
+- `css/style.css` — Main stylesheet
+- `javascript/` — JavaScript files
+- `*.png`, `*.jpg` — Image assets
+
+## Running the Project
+
+The project is served as a static site using Python's built-in HTTP server:
+
+```
+python3 -m http.server 5000 --bind 0.0.0.0
+```
+
+This runs on port 5000 and is accessible via the Replit preview pane.
+
+## Deployment
+
+Configured as a static site deployment with `publicDir: "."`.
+>>>>>>> aa93ed26e52dd4e415392c4751aa66d99b73ddcf
