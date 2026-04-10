@@ -179,8 +179,9 @@
 
     /* Override webflow CSS that hides .load and .l-over with .hometoggler */
     .load { display: flex !important; }
-    .load[style*="display: none"] { pointer-events: none !important; }
-    .l-over { display: none; }
+    .load[style*="display: none"] { display: none !important; pointer-events: none !important; visibility: hidden !important; }
+    .load[style*="display: none"] * { pointer-events: none !important; visibility: hidden !important; }
+    .l-over { display: none; pointer-events: none !important; }
 
     /* Disable text selection */
     @media (min-width: 991px) {
