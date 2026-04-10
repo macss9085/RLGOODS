@@ -1,42 +1,3 @@
-<<<<<<< HEAD
-# Workspace
-
-## Overview
-
-pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
-
-## Stack
-
-- **Monorepo tool**: pnpm workspaces
-- **Node.js version**: 24
-- **Package manager**: pnpm
-- **TypeScript version**: 5.9
-- **API framework**: Express 5
-- **Database**: PostgreSQL + Drizzle ORM
-- **Validation**: Zod (`zod/v4`), `drizzle-zod`
-- **API codegen**: Orval (from OpenAPI spec)
-- **Build**: esbuild (CJS bundle)
-
-## Key Commands
-
-- `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- `pnpm --filter @workspace/api-server run dev` — run API server locally
-
-See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
-
-## Artifacts
-
-### RLGOODS (`artifacts/rlgoods`)
-- Static animated WebGL portfolio site for RLGOODS (LEGO Display Inserts)
-- Pure HTML/CSS/JavaScript — no React, no backend
-- Uses Three.js (WebGL sphere), GSAP animations, Locomotive Scroll, Spline viewer
-- Pages: home (index.html), studio (work.html), L.E.D (about.html), contact, credits
-- Served via Vite dev server as a multi-page static site at preview path `/`
-- Source files extracted from `attached_assets/RLGOODS-main_*.zip`
-=======
 # WebGL Portfolio Clone
 
 A animated WebGL portfolio website built with HTML, CSS, and JavaScript (Three.js, Locomotive.js, GSAP).
@@ -62,4 +23,3 @@ This runs on port 5000 and is accessible via the Replit preview pane.
 ## Deployment
 
 Configured as a static site deployment with `publicDir: "."`.
->>>>>>> aa93ed26e52dd4e415392c4751aa66d99b73ddcf

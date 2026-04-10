@@ -2441,11 +2441,14 @@ h5 {
   z-index: -1;
   width: 100%;
   height: 100vh;
+<<<<<<< HEAD
   display: block;
 }
 
 spline-viewer.webglholder {
   --spline-viewer-background: transparent;
+=======
+>>>>>>> ed88af0ee05c04138a88c0243327adc007716102
 }
 .sound {
   position: absolute;
