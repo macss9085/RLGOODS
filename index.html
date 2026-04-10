@@ -313,14 +313,15 @@
     </div>
   </div>
 
-  <!-- Sound toggler — visible at all times (behind overlay until it leaves) -->
+  <!-- Sound toggler hidden for now — causing pointer-events issues
   <a rel="noopener" aria-label="sound" href="#" class="sound soundtoggler w-inline-block"></a>
+  -->
 
 
   <script>
     // Instantiate SoundToggler (requires RAF + DOM .soundtoggler element)
     let soundToggler = null;
-    if (!window.isMobile) soundToggler = new SoundToggler();
+    // if (!window.isMobile) soundToggler = new SoundToggler();
   </script>
 
   <script>
