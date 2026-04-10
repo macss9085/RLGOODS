@@ -25,3 +25,13 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## Artifacts
+
+### RLGOODS (`artifacts/rlgoods`)
+- Static animated WebGL portfolio site for RLGOODS (LEGO Display Inserts)
+- Pure HTML/CSS/JavaScript — no React, no backend
+- Uses Three.js (WebGL sphere), GSAP animations, Locomotive Scroll, Spline viewer
+- Pages: home (index.html), studio (work.html), L.E.D (about.html), contact, credits
+- Served via Vite dev server as a multi-page static site at preview path `/`
+- Source files extracted from `attached_assets/RLGOODS-main_*.zip`
