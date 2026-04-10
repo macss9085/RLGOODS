@@ -179,6 +179,7 @@
 
     /* Override webflow CSS that hides .load and .l-over with .hometoggler */
     .load { display: flex !important; }
+    .load[style*="display: none"] { pointer-events: none !important; }
     .l-over { display: none; }
 
     /* Disable text selection */
@@ -201,20 +202,25 @@
       width: 100%;
       height: 100%;
       z-index: 0;
-      pointer-events: auto;
+      cursor: auto;
     }
     .spline-landing spline-viewer {
-      display: block;
-      width: 100%;
-      height: 100%;
-      pointer-events: auto;
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+      pointer-events: auto !important;
     }
 
     /* Sound toggler stays on top of Spline after welcome is gone */
     .sound.soundtoggler {
       z-index: 100;
+      pointer-events: auto;
     }
-    .soundtoggler canvas { width: 100%; height: 100%; }
+    .soundtoggler canvas {
+      width: 100%;
+      height: 100%;
+      pointer-events: auto;
+    }
 
 
     /* Text stroke styling for l-head */
